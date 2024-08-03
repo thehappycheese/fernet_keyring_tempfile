@@ -51,5 +51,5 @@ print(
 ```
 
 Note that if the passphrase (e.g. `"TEST_APPLICATION_NAME"`) appears in
-plaintext in the example above. This is a big security hole, since the attacker can
-presumably also see your source code.
+plaintext in the example above then there is a hole in security since the
+attacker can presumably also see your source code.
