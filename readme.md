@@ -1,3 +1,5 @@
+[![PyPi](https://github.com/thehappycheese/fernet_keyring_tempfile/actions/workflows/publish_to_pypi.yml/badge.svg)](https://github.com/thehappycheese/fernet_keyring_tempfile/actions/workflows/publish_to_pypi.yml)
+
 # Fernet Keyring Tempfile
 
 > WARNING: you should read the source code and understand this package, or do
