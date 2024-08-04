@@ -7,8 +7,9 @@
 > naive and simple secret storage system. The main purpose is to avoid storing
 > plaintext tokens on disk between python notebook sessions.
 >
-> A better solution would be to use the `keyring` package directly, but on
-> windows there is some
+> A better solution would be to use the
+> [keyring](https://pypi.org/project/keyring/) package directly, but on> windows
+> there is some
 > [silly limit on the size of a password (1280 characters?)](https://github.com/jaraco/keyring/issues/355)
 > that means I need to save my secret to disk instead.
 >
@@ -20,6 +21,9 @@
 > However if their process is running under another username, or they just got
 > access to your storage device without remote code execution, then perhaps this
 > method offers some level of protection.
+>
+> Also, I have now learned that  this should have been implemented as a custom 
+> backend for the [keyring](https://pypi.org/project/keyring/) package instead.
 
 ```bash
 pip install fernet-keyring-tempfile
