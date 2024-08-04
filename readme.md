@@ -21,6 +21,10 @@
 > access to your storage device without remote code execution, then perhaps this
 > method offers some level of protection.
 
+```bash
+pip install fernet-keyring-tempfile
+```
+
 This package uses `cryptography.Fernet().encrypt()` to encrypt and store a file
 in your machines temporary folder (determined using `tempfile.gettempdir()`).
 The key is generated using `cryptography.Fernet.generate_key()` and is
